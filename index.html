@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac Calculator - by: jpos</title>
+        <link rel="stylesheet" href="style.css">
+        <script type = "text/javascript" src = "calculator.js" ></script>
+    </head>
+    <body>
+        <div class="windows">
+            <div class="bar">
+                <div class="buttons">
+                </div>
+            </div>
+            <div class="results">
+                <input class="results-text" type="text" id="results" name="results" value="0" readonly>
+            </div>
+            <div class="digits">
+                <button class="button-functions" type="button" onclick=cancelEntry() >CE</button>
+                <button class="button-functions" type="button">Undo</button>
+                <button onclick=backSpace(this) class="button-functions" type="button">BS</button>
+                <button onclick=addEntry(this) value="/" class="button-operations" type="button">/</button>
+                <button onclick=addEntry(this) value="1" class="button-numbers" type="button">1</button>
+                <button onclick=addEntry(this) value="2" class="button-numbers" type="button">2</button>
+                <button onclick=addEntry(this) value="3" class="button-numbers" type="button">3</button>
+                <button value="*" class="button-operations" type="button">x</button>
+                <button value="4" class="button-numbers" type="button">4</button>
+                <button value="5" class="button-numbers" type="button">5</button>
+                <button value="6" class="button-numbers" type="button">6</button>
+                <button value="-" class="button-operations" type="button">-</button>
+                <button value="7" class="button-numbers" type="button">7</button>
+                <button value="8" class="button-numbers" type="button" onclick=addEntry(this) >8</button>
+                <button value="9" class="button-numbers" type="button">9</button>
+                <button value="+" class="button-operations" type="button">+</button>
+                <button value="0" class="button-numbers button-numbers-zero" type="button">0</button>
+                <button value="," class="button-numbers" type="button">,</button>
+                <button class="button-operations" type="button" onclick=showResults() >=</button>
+                        
+                    
+            </div>
+        </div>
+    </body>
+</html>
+<!--
+    div windows
+        bar
+            buttom
+                id close
+                id max/res
+                id min
+        results
+        digitis
+            numbers
+                id
+            operations
+                id 
+            funcitions
+                id
+    
+    >
