@@ -1,3 +1,8 @@
+function backSpace() {
+    var resText = document.getElementById('results');
+    resText.setAttribute('value','0');
+}
+
 function showResults() {
     var resText = document.getElementById('results');
     resText.setAttribute('value','1');
